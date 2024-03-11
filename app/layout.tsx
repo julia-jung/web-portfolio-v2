@@ -3,7 +3,7 @@ import './globals.css';
 import { inter } from '@/lib/fonts';
 
 export const metadata: Metadata = {
-  title: 'Minji Jung',
+  title: 'Minji Jung | portfolio',
   description: 'Web developer portfolio',
 };
 
