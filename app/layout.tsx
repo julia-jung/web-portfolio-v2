@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { inter } from '@/lib/fonts';
+import { poppins } from '@/lib/fonts';
 
 export const metadata: Metadata = {
   title: 'Minji Jung | portfolio',
@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${poppins.className} selection:bg-point-blue/25`}>{children}</body>
     </html>
   );
 }
