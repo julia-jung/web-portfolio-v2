@@ -16,7 +16,7 @@ const config: Config = {
         },
         'point-blue': '#36bcff',
         'gray': '#3b3b3b',
-        // 'neutral': '#f5f3f0',
+        'neutral': '#f5f3f0',
       },
     },
   },
