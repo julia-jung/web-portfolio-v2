@@ -1,14 +1,7 @@
-import Link from 'next/link';
 import Image from 'next/image';
-import { Nav } from '../ui';
+import { Nav, Contacts } from '../ui';
 
 export default function Profile() {
-  const socialLinks = [
-    { name: 'Github link icon', href: 'https://github.com/julia-jung', icon: 'icons/github.svg' },
-    { name: 'LinkedIn link icon', href: 'https://www.linkedin.com/in/minjijuliajung/', icon: 'icons/linkedin.svg' },
-    { name: 'Mail link icon', href: '', icon: 'icons/mail.svg' },
-  ];
-
   return (
     <div className="flex min-h-80 flex-row justify-around px-6 py-12 md:h-full md:flex-col md:justify-normal md:p-12">
       <p className="mb-8 hidden text-2xl font-bold md:block lg:text-4xl">Hi, I am</p>
@@ -27,19 +20,11 @@ export default function Profile() {
         <p className="mb-3 text-xl font-bold md:hidden">Hi, I am</p>
         <p className="mb-3 text-2xl font-bold md:mb-5 md:text-3xl lg:text-5xl">Minji Jung</p>
         <p className="text-point-blue mb-3 font-bold md:text-xl lg:text-2xl ">Full Stack Engineer</p>
-        <p className="text-point-blue mb-3 text-xs italic antialiased md:mb-5 md:text-sm lg:text-base">
+        <p className="text-point-blue mb-3 text-xs italic md:mb-5 md:text-sm lg:text-base">
           From Concept to Code, Prioritizing User Delight and Functional Excellence
         </p>
         <Nav />
-        <ul className="flex flex-1 grow items-end justify-end space-x-5">
-          {socialLinks.map((link) => (
-            <li className="relative size-6 md:size-8" key={link.name}>
-              <Link href={link.href} target="_blank" rel="noopener noreferrer">
-                <Image src={link.icon} fill={true} alt={link.name} />
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <Contacts />
       </div>
     </div>
   );

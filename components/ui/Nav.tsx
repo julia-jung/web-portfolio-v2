@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import clsx from 'clsx';
-import { useHash } from '@/lib/hooks';
+import { useHash } from '@/hooks';
 
 export default function Nav() {
   const navs = [
@@ -26,8 +26,9 @@ export default function Nav() {
                 })}
               />
               <span
-                className={clsx('text-white group-hover:text-white', {
-                  'text-neutral/60': nav.id !== hash,
+                className={clsx(' group-hover:text-white', {
+                  'text-white': nav.id === hash,
+                  'text-neutral/50': nav.id !== hash,
                 })}
               >
                 {nav.name}
