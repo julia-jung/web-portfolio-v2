@@ -3,9 +3,10 @@ import { useEffect, useState } from 'react';
 
 export function useHash() {
   const [hash, setHash] = useState('');
-  
-  const getHash = () => (typeof window !== 'undefined' ? decodeURIComponent(window.location.hash.replace('#', '')) : '');
-  
+
+  const getHash = () =>
+    typeof window !== 'undefined' ? decodeURIComponent(window.location.hash.replace('#', '')) : '';
+
   useEffect(() => {
     const handleHashChange = () => {
       setHash(getHash());
@@ -17,19 +18,20 @@ export function useHash() {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          console.log(entry.target.id);
-          window.location.hash = entry.target.id;
-          setHash(entry.target.id);
-        }
-      });
-    },
-    {
-      root: document.querySelector('#root'),
-      rootMargin: '-10px',
-      });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            window.location.hash = entry.target.id;
+            setHash(entry.target.id);
+          }
+        });
+      },
+      {
+        root: document.querySelector('#root'),
+        rootMargin: '-10px',
+      },
+    );
 
     document.querySelectorAll('section').forEach((section) => {
       observer.observe(section);
@@ -41,4 +43,4 @@ export function useHash() {
   }, []);
 
   return hash;
-};
+}

@@ -1,10 +1,10 @@
-import { Experience } from "@/types";
+import { Experience, Project } from '@/types';
 
 export const about: string[] = [
-  "As a full-stack web developer, my strength lies in problem-solving skill based on deep understanding of the service I build.",
-  "When I work, I'm often obsessed with details being meticulous and organized. I am a perfectionist. I always communicate and double check with teams to minimize bugs and avoid missing out on details, which as a result reduce the project time. ",
-  "Personality wise, I'm highly responsible.I'm all about integrity and try my best to keep my word and get things done in time. At the same time, I pursue being efficient at work.Inefficiency is something I can not stand for.",
-  "As a developer I see a good service is decided by users.Therefore providing them what they need and delivering the best user experience is the all time priority.With that being said, I care about UX the most to deliever seamless user experience and in the end, communication with planners and designers is the key to build quality product with best user experience, which is where I shine."
+  'As a full-stack web developer, my strength lies in problem-solving skill based on deep understanding of the service I build.',
+  'When I work, I am often obsessed with details being meticulous and organized. I am a perfectionist. I always communicate and double check with teams to minimize bugs and avoid missing out on details, which as a result reduce the project time.',
+  'Personality wise, I am highly responsible. I am all about integrity and try my best to keep my word and get things done in time. At the same time, I pursue being efficient at work.Inefficiency is something I can not stand for.',
+  'As a developer I see a good service is decided by users.Therefore providing them what they need and delivering the best user experience is the all time priority.With that being said, I care about UX the most to deliever seamless user experience and in the end, communication with planners and designers is the key to build quality product with best user experience, which is where I shine.',
 ];
 
 export const experiences: Experience[] = [
@@ -12,7 +12,7 @@ export const experiences: Experience[] = [
     id: 2,
     start: '2019',
     end: '2023',
-    duration: '4y 3m',
+    duration: '4y 4m',
     company: 'ONDA',
     location: 'Seoul, South Korea',
     link: 'https://global.onda.me/',
@@ -22,14 +22,14 @@ export const experiences: Experience[] = [
     skills: [
       'Typescript',
       'Javascript',
-      'Vuejs',
-      'Nuxtjs',
+      'Vue.js',
+      'Nuxt.js',
       'Angular',
       'HTML',
       'CSS',
       'SCSS',
-      'Nodejs',
-      'Nestjs',
+      'Node.js',
+      'Nest.js',
       'REST API',
       'GraphQL',
       'MySQL',
@@ -56,5 +56,42 @@ export const experiences: Experience[] = [
       'MS Excel',
       'MS Word',
     ],
+  },
+];
+
+export const projects: Project[] = [
+  {
+    id: 1,
+    name: 'Booking Engine',
+    description: 'Responsive Hotel Booking Website',
+    thumbnail: '/images/booking-engine.png',
+    stack: ['Frontend', 'Backend', 'Typescript', 'Nuxt.js(SSR)', 'SCSS', 'BEM', 'GraphQL', 'Prisma', 'MySQL'],
+    url: 'https://booking-engine.onda.me/theocean',
+  },
+  {
+    id: 2,
+    name: 'Booking Engine Admin',
+    description: 'Booking Engine Account Management Admin Website',
+    thumbnail: '/images/booking-engine-admin.png',
+    stack: ['Frontend', 'Backend', 'Typescript', 'Vue3', 'NaiveUI', 'Nest.js', 'RESTful API'],
+  },
+  {
+    id: 3,
+    name: 'Pension Plus Web & Mobile Webview',
+    description:
+      'Web application & Mobile Webview of Property Management System targeted for pensions(small and medium-sized lodging)',
+    thumbnail: '/images/pension-plus.png',
+    stack: ['Frontend', 'Typescript', 'Angular', 'Vuejs'],
+    demo: 'https://www.onda.me/pension-plus',
+    url: 'https://play.google.com/store/apps/details?id=io.tport.pensionpms&hl=en_US&pli=1',
+  },
+  {
+    id: 4,
+    name: 'Portfolio',
+    description: 'Personal portfolio webpage built with Next.js + Tailwind CSS',
+    thumbnail: '/images/portfolio.png',
+    stack: ['Frontend', 'Typescript', 'React', 'Next.js', 'Tailwind CSS'],
+    github: 'https://github.com/julia-jung/web-portfolio-v2',
+    // demo:
   },
 ];

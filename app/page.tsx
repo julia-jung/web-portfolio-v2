@@ -3,10 +3,10 @@ import { Profile, About, Experiences, Projects } from '@/components/sections';
 export default function Home() {
   return (
     <div className="antialiased md:flex">
-      <div className="bg-brown-light text-white md:sticky md:top-0 md:max-h-screen md:max-w-sm md:shrink-0 lg:max-w-md">
+      <div className="bg-gradient-to-b from-zinc-600 to-zinc-800 text-white md:max-w-sm lg:sticky lg:top-0 lg:max-h-screen lg:max-w-md lg:shrink-0">
         <Profile />
       </div>
-      <div id="root" className="text-gray snap-y overflow-y-scroll scroll-smooth md:h-screen">
+      <div id="root" className="snap-y overflow-y-scroll scroll-smooth text-zinc-900 md:h-screen">
         <About />
         <Experiences />
         <Projects />

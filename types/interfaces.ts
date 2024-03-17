@@ -14,7 +14,10 @@ export interface Experience {
 export interface Project {
   id: number;
   name: string;
+  description: string;
+  thumbnail: string;
+  stack: string[];
   github?: string;
   demo?: string;
-  stack: string[];
+  url?: string;
 }

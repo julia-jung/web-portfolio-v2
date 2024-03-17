@@ -13,7 +13,7 @@ export default function Contacts() {
       {socialLinks.map((link) => (
         <li className="relative size-6 md:size-8" key={link.name}>
           <Link href={link.href} target="_blank" rel="noopener noreferrer">
-            {link.icon}
+            <div className="size-6 transition duration-300 ease-out hover:-translate-y-1">{link.icon}</div>
           </Link>
         </li>
       ))}

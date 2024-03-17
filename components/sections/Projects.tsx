@@ -1,11 +1,13 @@
-import { about } from '@/lib/data';
-import { Section } from '../ui';
+import { Section, ProjectCard } from '../ui';
+import { projects } from '@/lib/data';
 
 export default function Projects() {
   return (
-    <Section title="Projects" id="projects">
-      {about.map((pharagraph, index) => (
-        <p key={index}>{pharagraph}</p>
+    <Section title="PROJECTS" id="projects">
+      {projects.map((project) => (
+        <div key={project.id}>
+          <ProjectCard {...project} />
+        </div>
       ))}
     </Section>
   );
