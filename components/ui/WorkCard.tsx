@@ -1,6 +1,6 @@
 import { Experience } from '@/types';
 import { ArrowRightIcon } from '../icons';
-import { sourceCodePro } from '@/lib/fonts';
+import Skills from './Skills';
 
 interface WorkCardProps extends Experience {}
 
@@ -35,16 +35,7 @@ export default function WorkCard({
           </div>
         </div>
         <p className="mt-4">{description}</p>
-        <div className={`${sourceCodePro.className} mt-6 flex flex-wrap gap-2 text-sm`}>
-          {skills.map((skill) => (
-            <span
-              key={skill}
-              className="rounded-full bg-zinc-500 px-2.5 py-1 text-xs text-white transition duration-300 ease-in group-hover:bg-zinc-700"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
+        <Skills skills={skills} />
       </div>
     </div>
   );

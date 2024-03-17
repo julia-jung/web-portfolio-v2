@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Project } from '@/types';
 import { ArrowRightIcon, ArrowUpRightIcon } from '../icons';
-import { sourceCodePro } from '@/lib/fonts';
+import Skills from './Skills';
 
 interface ProjectCardProps extends Project {}
 
@@ -56,16 +56,7 @@ export default function ProjectCard({ name, description, thumbnail, stack, url, 
             </Link>
           )}
         </div>
-        <div className={`${sourceCodePro.className} mt-6 flex flex-wrap gap-2 text-sm`}>
-          {stack.map((skill) => (
-            <span
-              key={skill}
-              className="rounded-full bg-zinc-500 px-2 py-0.5 text-xs text-white transition duration-300 ease-in group-hover:bg-zinc-700"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
+        <Skills skills={stack} />
       </div>
     </div>
   );
