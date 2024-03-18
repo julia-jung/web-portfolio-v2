@@ -1,4 +1,5 @@
 import { Profile, About, Experiences, Projects } from '@/components/sections';
+import { Footer } from '@/components/ui';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <About />
         <Experiences />
         <Projects />
+        <Footer />
       </div>
     </div>
   );
