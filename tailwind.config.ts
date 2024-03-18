@@ -9,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        'spin-medium': 'spin 2s linear',
-        'spin-slow': 'spin 3s linear',
+        'spin-medium': 'spin 2s ease-in-out',
+        'spin-slow': 'spin 3s ease-out',
       },
     },
   },

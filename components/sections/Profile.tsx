@@ -7,16 +7,22 @@ export default function Profile() {
     <div className="flex min-h-80 flex-row justify-around px-6 py-12 md:h-full md:flex-col md:justify-normal md:p-12">
       <p className={`${sourceCodePro.className} mb-8 hidden text-2xl font-bold md:block lg:text-4xl`}>Hi, I am</p>
       <div className="group relative mr-8 size-32 shrink-0 md:mb-8 md:mr-0 md:size-48 lg:size-72">
-        <div className="group-hover:animate-spin-medium absolute -top-2 z-20 h-full w-full md:top-0">
-          <div className="size-8 rounded-full bg-sky-400 md:size-12 lg:size-16" />
+        <div className="animate-spin-medium absolute -top-2 z-20 h-full w-full md:top-0">
+          <Image
+            className="size-6 md:size-8 lg:size-14"
+            width="40"
+            height="40"
+            src="/imojis/airplane.png"
+            alt="Airplain imoji"
+          />
         </div>
         <Image
-          className="relative z-10 rounded-full object-cover ring-4 ring-violet-500 ring-offset-4 ring-offset-zinc-800 group-hover:ring-offset-8"
+          className="relative z-10 rounded-full object-cover ring-4 ring-violet-500 ring-offset-8 ring-offset-zinc-800 lg:ring-8"
           src="/images/profile.png"
           fill={true}
           alt="My profile image"
         />
-        <div className="group-hover:animate-spin-medium absolute top-0 z-0 h-full w-full">
+        <div className="animate-spin-medium absolute top-0 z-0 h-full w-full">
           <div className="absolute -bottom-4 right-0 size-12 rounded-full bg-zinc-900 md:size-20 lg:size-28"></div>
         </div>
       </div>
@@ -29,7 +35,7 @@ export default function Profile() {
           Full Stack Software Engineer
         </p>
         <p className="mb-3 text-xs italic text-sky-400 md:mb-5 md:text-sm lg:text-base">
-          From Concept to Code, Prioritizing User Delight and Functional Excellence
+          Crafting Awesome Digital Experiences with Flawless Execution with Attention to Detail
         </p>
         <Nav />
         <Contacts />

@@ -35,7 +35,9 @@ export default function WorkCard({
           </div>
         </div>
         <p className="mt-4">{description}</p>
-        <Skills skills={skills} />
+        <div className="mt-6">
+          <Skills skills={skills} />
+        </div>
       </div>
     </div>
   );

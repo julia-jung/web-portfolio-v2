@@ -6,7 +6,7 @@ interface SkillsProp {
 
 export default function Skills({ skills }: SkillsProp) {
   return (
-    <ul className={`${sourceCodePro.className} mt-6 flex flex-wrap gap-2 text-sm`}>
+    <ul className={`${sourceCodePro.className} flex flex-wrap items-center gap-2 text-sm`}>
       {skills.map((skill) => (
         <li
           key={skill}

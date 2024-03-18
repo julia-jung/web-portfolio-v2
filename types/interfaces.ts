@@ -1,3 +1,9 @@
+export interface Skills {
+  frontend: string[];
+  backend: string[];
+  tools: string[];
+}
+
 export interface Experience {
   id: number;
   start: string;

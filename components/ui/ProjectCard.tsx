@@ -34,15 +34,18 @@ export default function ProjectCard({ name, description, thumbnail, stack, url, 
         <div className="flex">
           <div className="mt-1 text-xl font-semibold text-violet-500 group-hover:text-violet-400 md:text-2xl">
             {name}
-            {url && (
+            {/* {url && (
               <div className="ml-2 inline-block size-4 transition duration-300 ease-out group-hover:-translate-y-1 group-hover:translate-x-1 md:size-5">
                 <ArrowUpRightIcon violet />
               </div>
-            )}
+            )} */}
           </div>
         </div>
         <p className="mt-4">{description}</p>
-        <div className="flex">
+        <div className="mt-6">
+          <Skills skills={stack} />
+        </div>
+        <div className="mt-4 flex">
           {(github || demo) && (
             <Link href={github ?? demo ?? ''} target="_blank" rel="noreferrer noopener">
               <div className="group/link mt-2 flex items-center gap-1 font-semibold">
@@ -56,7 +59,6 @@ export default function ProjectCard({ name, description, thumbnail, stack, url, 
             </Link>
           )}
         </div>
-        <Skills skills={stack} />
       </div>
     </div>
   );

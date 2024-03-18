@@ -1,11 +1,10 @@
-import { Experience, Project } from '@/types';
+import { Experience, Project, Skills } from '@/types';
 
-export const about: string[] = [
-  'As a full-stack web developer, my strength lies in problem-solving skill based on deep understanding of the service I build.',
-  'When I work, I am often obsessed with details being meticulous and organized. I am a perfectionist. I always communicate and double check with teams to minimize bugs and avoid missing out on details, which as a result reduce the project time.',
-  'Personality wise, I am highly responsible. I am all about integrity and try my best to keep my word and get things done in time. At the same time, I pursue being efficient at work.Inefficiency is something I can not stand for.',
-  'As a developer I see a good service is decided by users.Therefore providing them what they need and delivering the best user experience is the all time priority.With that being said, I care about UX the most to deliever seamless user experience and in the end, communication with planners and designers is the key to build quality product with best user experience, which is where I shine.',
-];
+export const skills: Skills = {
+  frontend: ['Typescript', 'Javascript', 'HTML', 'CSS', 'SCSS', 'Vue.js', 'Nuxt.js', 'React', 'Next.js', 'Angular'],
+  backend: ['Node.js', 'Nest.js', 'REST API', 'GraphQL', 'MySQL'],
+  tools: ['Git', 'Agile(Scrum)', 'Jira', 'Asana'],
+};
 
 export const experiences: Experience[] = [
   {
@@ -17,7 +16,7 @@ export const experiences: Experience[] = [
     location: 'Seoul, South Korea',
     link: 'https://global.onda.me/',
     description:
-      'ONDA is a tech Startup in Hospitality Industry provides solutions such as PMS(Property Management System) and CMS(Channel Management System) collaborating with domestic and international online booking channels(e.g. Agoda, Airbnb, and Expedia) for hotels or any types of accommodation owners. For the last two years as a Mid-Level Software Engineer I developed my back-end skills while leading a front-end project. My Responsibility for the first 2 years as a Junior Software Engineer was mainly focused on front-end development.',
+      'Built core features including the booking process, price and inventory management for property management systems (PMS), hotel booking web pages, and back-office systems. Starting as a junior engineer and progressing to a mid-level position, I honed not only my programming abilities but also my communication and collaboration skills working closely with product and design teams to ensure alignment and successful project outcomes. ',
     role: 'Junior-Mid Software Engineer, Full Stack',
     skills: [
       'Typescript',
@@ -46,7 +45,7 @@ export const experiences: Experience[] = [
     link: 'https://www.hec.co.kr/en',
     role: 'Project Management Engineer',
     description:
-      'Managed budget, invoice and engineering timeline for process plant construction projects in South Korea, Turkmenistan, Venezuela, etc.',
+      'As a Project Engineer within the Project Management team, I held responsibility for overseeing project budgets, invoices, and engineering milestones across various locations including South Korea, Turkmenistan, and Venezuela. Managing multimillion-dollar projects alongside hundreds of engineers, I honed my organizational, communication, and time management skills.',
     skills: [
       'Project Management',
       'Organizational Skill',
@@ -63,7 +62,8 @@ export const projects: Project[] = [
   {
     id: 1,
     name: 'Booking Engine',
-    description: 'Responsive Hotel Booking Website',
+    description:
+      'A Booking Engine web app for hotels, allowing users to search for rooms, make, pay for, find, and cancel reservations. Fully responsive and customizable for each hotel with theming. I&apos;ve published and implemented the entire frontend and some backend features, including the booking process.',
     thumbnail: '/images/booking-engine.png',
     stack: ['Frontend', 'Backend', 'Typescript', 'Nuxt.js(SSR)', 'SCSS', 'BEM', 'GraphQL', 'Prisma', 'MySQL'],
     url: 'https://booking-engine.onda.me/theocean',
@@ -71,15 +71,16 @@ export const projects: Project[] = [
   {
     id: 2,
     name: 'Booking Engine Admin',
-    description: 'Booking Engine Account Management Admin Website',
+    description:
+      'An admin web app for in-house staff to create and manage accounts and the status of the Booking Engine used by hotels. As the project lead, I was in charge of designing the system and implementing core features.',
     thumbnail: '/images/booking-engine-admin.png',
     stack: ['Frontend', 'Backend', 'Typescript', 'Vue3', 'NaiveUI', 'Nest.js', 'RESTful API'],
   },
   {
     id: 3,
-    name: 'Pension Plus Web & Mobile Webview',
+    name: 'Pension Plus Web & Mobile Web View',
     description:
-      'Web application & Mobile Webview of Property Management System targeted for pensions(small and medium-sized lodging)',
+      'A web application & mobile web view of Property Management System (PMS) targeted for pensions (small and medium-sized lodging) to help them manage the revenue, reservations, and rates. I maintained, enhanced, and implemented frontend features.',
     thumbnail: '/images/pension-plus.png',
     stack: ['Frontend', 'Typescript', 'Angular', 'Vuejs'],
     demo: 'https://www.onda.me/pension-plus',
@@ -87,11 +88,11 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    name: 'Portfolio',
-    description: 'Personal portfolio webpage built with Next.js + Tailwind CSS',
+    name: 'Web Portfolio',
+    description: 'A personal portfolio webpage built with Next.js + Tailwind CSS. Fully responsive.',
     thumbnail: '/images/portfolio.png',
     stack: ['Frontend', 'Typescript', 'React', 'Next.js', 'Tailwind CSS'],
     github: 'https://github.com/julia-jung/web-portfolio-v2',
-    // demo:
+    url: '',
   },
 ];
