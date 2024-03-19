@@ -93,6 +93,6 @@ export const projects: Project[] = [
     thumbnail: '/images/portfolio.png',
     stack: ['Frontend', 'Typescript', 'React', 'Next.js', 'Tailwind CSS'],
     github: 'https://github.com/julia-jung/web-portfolio-v2',
-    url: '',
+    url: 'https://minji-jung.vercel.app/',
   },
 ];
