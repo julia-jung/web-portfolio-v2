@@ -41,24 +41,30 @@ export default function About() {
         <span className="inline-block bg-gradient-to-r from-cyan-400 to-violet-400 bg-clip-text text-lg text-transparent after:block after:border-b-2 after:border-violet-400">
           Skills
         </span>
-        <div className="mt-6 flex items-center gap-2">
-          <span className="font-semibold">Frontend</span>
-          <div className="size-4 shrink-0 align-middle">
-            <ArrowRightIcon />
+        <div className="mt-6 flex flex-col items-start gap-2 md:flex-row md:items-center">
+          <div className="flex items-center gap-2">
+            <span className="font-semibold">Frontend</span>
+            <div className="size-4 shrink-0 rotate-90 align-middle md:rotate-0">
+              <ArrowRightIcon />
+            </div>
           </div>
           <Skills skills={skills.frontend} />
         </div>
-        <div className="mt-3 flex items-center gap-2">
-          <span className="font-semibold">Backend</span>
-          <div className="size-4 shrink-0 align-middle">
-            <ArrowRightIcon />
+        <div className="mt-6 flex flex-col items-start gap-2 md:mt-3 md:flex-row md:items-center">
+          <div className="flex items-center gap-2">
+            <span className="font-semibold">Backend</span>
+            <div className="size-4 shrink-0 rotate-90 align-middle md:rotate-0">
+              <ArrowRightIcon />
+            </div>
           </div>
           <Skills skills={skills.backend} />
         </div>
-        <div className="mt-3 flex items-center gap-2">
-          <span className="font-semibold">Tools</span>
-          <div className="size-4 shrink-0 align-middle">
-            <ArrowRightIcon />
+        <div className="mt-6 flex flex-col items-start gap-2 md:mt-3 md:flex-row md:items-center">
+          <div className="flex items-center gap-2">
+            <span className="font-semibold">Tools</span>
+            <div className="size-4 shrink-0 rotate-90 align-middle md:rotate-0">
+              <ArrowRightIcon />
+            </div>
           </div>
           <Skills skills={skills.tools} />
         </div>
