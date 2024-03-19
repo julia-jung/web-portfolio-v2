@@ -19,17 +19,13 @@ export default function Profile() {
           />
         </div>
         <Image
-          className="relative z-10 rounded-full object-cover object-[50%_40%] ring-4 ring-violet-500 ring-offset-4 ring-offset-zinc-800 drop-shadow-[1px_1px_5px_#a78bfa] md:drop-shadow-[1px_1px_20px_#a78bfa] lg:ring-8 lg:ring-offset-8"
+          className="relative z-10 rounded-full object-cover object-[50%_40%] ring-4 ring-violet-500 ring-offset-4 ring-offset-zinc-800 lg:ring-8 lg:ring-offset-8"
           src="/images/profile.jpg"
           fill={true}
           priority={true}
           sizes="100%, 100%"
           alt="My profile image"
         />
-        <span className="animate-small-ping absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-75"></span>
-        <div className="absolute top-0 z-0 h-full w-full">
-          <div className="absolute -bottom-4 right-0 size-12 rounded-full bg-zinc-900 md:size-20 lg:size-28"></div>
-        </div>
       </div>
       <div className="flex min-h-full flex-col md:h-full md:min-h-0">
         <p className={`${sourceCodePro.className} mb-3 text-xl font-bold lg:hidden`}>Hi, I&apos;m</p>
