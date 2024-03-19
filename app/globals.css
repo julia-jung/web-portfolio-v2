@@ -17,17 +17,33 @@
   }
 }
 
+.text-shine {
+  background-image: linear-gradient(270deg, #22d3ee 13.84%, #8b5cf6 59.7%, #22d3ee 93.89%);
+  background-size: 200% 100%;
+}
+
 @keyframes text-shine {
-  from,
+  from {
+    background-position: 150%;
+  }
   to {
-    background-size: 300%;
-    background-position: left;
+    background-position: -50%;
   }
-  25%,
-  75% {
-    background-position: center;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
   }
-  50% {
-    background-position: right;
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes small-ping {
+  75%,
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
   }
 }

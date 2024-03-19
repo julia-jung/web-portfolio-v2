@@ -11,7 +11,7 @@ export interface SectionProps extends ComponentProps {
 
 export default function Section({ children, title, id }: SectionProps) {
   return (
-    <section id={id} className="mb-48 snap-start p-12 md:min-h-screen lg:p-24">
+    <section id={id} className="animate-fade-in mb-48 p-12 md:min-h-screen lg:p-24">
       <p
         className={`${sourceCodePro.className} mb-6 text-2xl font-bold after:mt-3 after:block after:w-8 after:border-b-8 after:border-zinc-400 lg:mb-12 lg:text-4xl`}
       >

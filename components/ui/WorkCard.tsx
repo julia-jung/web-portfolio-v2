@@ -23,9 +23,9 @@ export default function WorkCard({
         <span className="text-sm text-zinc-500">({duration})</span>
       </div>
       <div className="grow">
-        <div className="flex grow flex-col">
+        <div className="mt-3 flex grow flex-col gap-1 md:mt-0">
           <p className="text-xl font-semibold text-sky-500 group-hover:text-sky-400 md:text-2xl">{role}</p>
-          <div className="mt-1 flex items-center gap-2">
+          <div className="flex items-center gap-2">
             <span className="text-sm text-zinc-500 md:text-base">
               {company} | {location}
             </span>

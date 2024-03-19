@@ -18,20 +18,14 @@ export function useHash() {
   }, []);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            window.location.hash = entry.target.id;
-            setHash(entry.target.id);
-          }
-        });
-      },
-      {
-        root: document.querySelector('#root'),
-        rootMargin: '-10px',
-      },
-    );
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle('animate-fade-in');
+        if (entry.isIntersecting) {
+          setHash(entry.target.id);
+        }
+      });
+    });
 
     document.querySelectorAll('section').forEach((section) => {
       observer.observe(section);

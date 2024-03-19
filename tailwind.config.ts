@@ -11,7 +11,9 @@ const config: Config = {
       animation: {
         'spin-slow': 'spin 3s ease-in-out',
         'spin-out': 'spin-out 5s ease-in-out',
-        'text-shine': 'text-shine 5s linear infinite',
+        'text-shine': 'text-shine 3s linear infinite',
+        'fade-in': 'fade-in 1s ease-in',
+        'small-ping': 'small-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       },
     },
   },
