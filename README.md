@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- HEADER -->
+<br />
+<h1 align="center">
+  <a href="http://www.amitmerchant.com/electron-markdownify">
+    👩‍💻
+  </a>
+  <br />
+  My Web Portfolio v2
+  <br />
+</h1>
+
+<!-- STACK -->
+
+[![Next][Next.js]][Next-url] [![React][React.js]][React-url] [![Tailwind][TailwindCSS]][Tailwind-url] [![Typescript][Typescript]][Typescript-url] [![Vercel][Vercel]][Vercel-url]
+
+<!-- DESCRIPTION-->
+
+<div align="center">
+  <img src="/public/images/preview.png" width="800" />
+  <p align="center">
+    A single page portfolio website showcasing my work and projects as a professional software engineer, built with <strong>React 18, Next.js 14, and styling fully with Tailwind CSS<strong>.
+    <br />
+    <h3>
+      <a href="https://www.minji-jung.com">
+        <strong>Visit 👉</strong>
+      </a>
+    </h3>
+    <br />
+    <br />
+  </p>
+</div>
+
+<!-- CONTENTS -->
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js version >= v18.17.0 is required
+- npm package manager
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+$ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Running the App
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+$ npm run dev # listen to port 3000
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
 
-## Learn More
+- Open [localhost:3000](http://localhost:3000) in your browser to see the app
 
-To learn more about Next.js, take a look at the following resources:
+## Dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| package       |  version |
+| ------------- | -------: |
+| `typescript`  |     `^5` |
+| `react`       |    `^18` |
+| `next`        | `14.1.3` |
+| `tailwindcss` | `^3.3.0` |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Directory Structure
 
-## Deploy on Vercel
+```bash
+├── app
+├── components
+│   ├── icons
+│   ├── sections
+│   └── ui
+├── hooks
+├── lib
+├── public
+└── types
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+| Path                 | Description                                                                                                                                    |
+| -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| /app                 | Application entry (used to define routes by [Nextjs App Rotuer](https://nextjs.org/docs/app/building-your-application/routing#the-app-router)) |
+| /components          | All other React Components other than route pages                                                                                              |
+| /components/icons    | Icons components                                                                                                                               |
+| /components/sections | Section contents components (e.g. About, Projects,...)                                                                                         |
+| /components/ui       | Shared UI components                                                                                                                           |
+| /hooks               | Custom React Hooks                                                                                                                             |
+| /lib                 | Sources outside React (data, fonts,...)                                                                                                        |
+| /public              | Public assets (Images, docs,...)                                                                                                               |
+| /types               | All Type files (Interfaces,...)                                                                                                                |
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[Typescript]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[Typescript-url]: https://www.typescriptlang.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[TailwindCSS]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[Vercel]: https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white
+[Vercel-url]: https://vercel.com/
