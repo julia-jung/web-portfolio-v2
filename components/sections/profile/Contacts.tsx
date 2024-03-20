@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { GithubIcon, LinkedInIcon, MailIcon } from '../icons';
+import { GithubIcon, LinkedInIcon, MailIcon } from '@/components/icons';
 
 export default function Contacts() {
   const socialLinks = [

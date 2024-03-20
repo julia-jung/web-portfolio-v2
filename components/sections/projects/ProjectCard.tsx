@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { ArrowRightIcon, ArrowUpRightIcon } from '@/components/icons';
+import { Skills } from '@/components/ui';
 import { Project } from '@/types';
-import { ArrowRightIcon, ArrowUpRightIcon } from '../icons';
-import Skills from './Skills';
 
 interface ProjectCardProps extends Project {}
 

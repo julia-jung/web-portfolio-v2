@@ -1,4 +1,5 @@
-import { Section, ProjectCard } from '../ui';
+import ProjectCard from './ProjectCard';
+import { Section } from '@/components/ui';
 import { projects } from '@/lib/data';
 
 export default function Projects() {

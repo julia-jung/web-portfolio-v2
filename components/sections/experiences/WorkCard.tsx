@@ -1,6 +1,6 @@
 import { Experience } from '@/types';
-import { ArrowRightIcon } from '../icons';
-import Skills from './Skills';
+import { ArrowRightIcon } from '@/components/icons';
+import { Skills } from '@/components/ui';
 
 interface WorkCardProps extends Experience {}
 

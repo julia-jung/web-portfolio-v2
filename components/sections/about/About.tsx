@@ -1,5 +1,5 @@
-import { ArrowRightIcon } from '../icons';
-import { Section, Skills } from '../ui';
+import { ArrowRightIcon } from '@/components/icons';
+import { Section, Skills } from '@/components/ui';
 import { skills } from '@/lib/data';
 
 export default function About() {

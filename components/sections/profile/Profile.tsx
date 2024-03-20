@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { Nav, Contacts } from '../ui';
+import Nav from './Nav';
+import Contacts from './Contacts';
 import { sourceCodePro } from '@/lib/fonts';
 
 export default function Profile() {
@@ -9,7 +10,7 @@ export default function Profile() {
         Hi, I&apos;m
       </p>
       <div className="group relative mr-8 size-32 shrink-0 md:mb-8 md:mr-0 md:size-48 lg:size-60">
-        <div className="animate-spin-out absolute -top-2 z-20 h-full w-full opacity-0 md:top-0">
+        <div className="absolute -top-2 z-20 h-full w-full animate-spin-out opacity-0 md:top-0">
           <Image
             className="size-6 rotate-180 md:size-8 lg:size-14"
             width="40"
@@ -32,7 +33,7 @@ export default function Profile() {
         <p className={`${sourceCodePro.className} mb-3 text-2xl font-bold md:mb-5 md:text-3xl lg:text-5xl`}>
           Minji Jung
         </p>
-        <p className="animate-text-shine text-shine mb-3 bg-clip-text font-bold text-transparent md:text-xl lg:text-2xl ">
+        <p className="text-shine mb-3 animate-text-shine bg-clip-text font-bold text-transparent md:text-xl lg:text-2xl ">
           Full Stack Software Engineer
         </p>
         <p className="mb-3 text-xs italic text-sky-400 md:mb-5 md:text-sm lg:text-base">
