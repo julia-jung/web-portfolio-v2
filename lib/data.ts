@@ -1,9 +1,9 @@
 import { Experience, Project, Skills } from '@/types';
 
 export const skills: Skills = {
-  frontend: ['Typescript', 'Javascript', 'HTML', 'CSS', 'SCSS', 'Vue.js', 'Nuxt.js', 'React', 'Next.js', 'Angular'],
+  frontend: ['Typescript', 'Javascript', 'HTML', 'CSS', 'SCSS', 'Vue.js', 'Nuxt.js', 'Angular', 'React', 'Next.js'],
   backend: ['Node.js', 'Nest.js', 'REST API', 'GraphQL', 'MySQL'],
-  tools: ['Git', 'Agile(Scrum)', 'Jira', 'Asana'],
+  tools: ['Git', 'Docker', 'Agile(Scrum)', 'Jira', 'Asana'],
 };
 
 export const experiences: Experience[] = [
@@ -16,7 +16,7 @@ export const experiences: Experience[] = [
     location: 'Seoul, South Korea',
     link: 'https://global.onda.me/',
     description:
-      'Built core features including the booking process, price and inventory management for property management systems (PMS), hotel booking web pages, and back-office systems. Starting as a junior engineer and progressing to a mid-level position, I honed not only my programming abilities but also my communication and collaboration skills working closely with product and design teams to ensure alignment and successful project outcomes. ',
+      'Built core features including the booking process, price and inventory management for Property Management Systems(PMS), hotel booking web pages, and back-office systems. Starting as a junior engineer and progressing to a mid-level position, I honed not only my programming abilities but also my communication and collaboration skills working closely with product and design teams to ensure alignment and successful project outcomes. ',
     role: 'Junior-Mid Software Engineer, Full Stack',
     skills: [
       'Typescript',
@@ -63,7 +63,7 @@ export const projects: Project[] = [
     id: 1,
     name: 'Booking Engine',
     description:
-      'A Booking Engine web app for hotels, allowing users to search for rooms, make, pay for, find, and cancel reservations. Fully responsive and customizable for each hotel with theming. I&apos;ve published and implemented the entire frontend and some backend features, including the booking process.',
+      "A Booking Engine web app for hotels, allowing users to search for rooms, make, pay for, find, and cancel reservations. Fully responsive and customizable for each hotel with theming. I've published and implemented the entire frontend and some backend features, including the booking process.",
     thumbnail: '/images/booking-engine.png',
     stack: ['Frontend', 'Backend', 'Typescript', 'Nuxt.js(SSR)', 'SCSS', 'BEM', 'GraphQL', 'Prisma', 'MySQL'],
     url: 'https://booking-engine.onda.me/theocean',
@@ -82,7 +82,7 @@ export const projects: Project[] = [
     description:
       'A web application & mobile web view of Property Management System (PMS) targeted for pensions (small and medium-sized lodging) to help them manage the revenue, reservations, and rates. I maintained, enhanced, and implemented frontend features.',
     thumbnail: '/images/pension-plus.png',
-    stack: ['Frontend', 'Typescript', 'Angular', 'Vuejs'],
+    stack: ['Frontend', 'Typescript', 'Angular', 'Vuejs', 'Vuetify'],
     demo: 'https://www.onda.me/pension-plus',
     url: 'https://play.google.com/store/apps/details?id=io.tport.pensionpms&hl=en_US&pli=1',
   },
